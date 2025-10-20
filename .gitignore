@@ -1,0 +1,23 @@
+# System
+.DS_Store
+.vscode/
+.idea/
+
+# Build
+build/
+install/
+log/
+*.pyc
+
+# Arduino / PlatformIO
+firmware/libraries/
+firmware/.pio/
+firmware/.vscode/
+firmware/build/
+
+# Secrets/config
+firmware/config.h
+*.env
+
+# Data large
+data/
