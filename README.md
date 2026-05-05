@@ -1,20 +1,17 @@
-# 🤖 Quad_WS v1.0
-### Robot cuadrúpedo basado en la plataforma open-source **Hyperdog**
-Proyecto de grado desarrollado con **ROS 2 Humble**, **micro-ROS**, **Jetson Nano**, y **ESP32-S3**.
+# Robot Cuadrúpedo de Locomoción Polinómica con Validación Dinámica
 
----
+Proyecto de grado para el programa de Ingeniería Mecatrónica - Universidad Mariana.
 
-## 🧠 Descripción general
+## 🚀 Resumen del Proyecto
+Implementación de un robot cuadrúpedo de 12 GDL enfocado en la generación de trayectorias suaves mediante curvas de Bézier de 5to grado y validación experimental de errores en campo.
 
-**Quad_WS** es un workspace ROS 2 adaptado para controlar un robot cuadrúpedo de diseño propio, con un enfoque modular y open-source.  
-La arquitectura está basada en la plataforma **Hyperdog**, pero con modificaciones específicas para integrar:
+## 📁 Estructura del Repositorio
+* **01_Simulation:** Modelado cinemático y agente DDPG (Reinforcement Learning).
+* **02_Implementation:** Firmware de control en C++ y puente de comunicación Python-UART.
+* **03_Data_Analysis:** Logs crudos de pruebas de laboratorio y scripts de procesamiento de datos.
+* **Legacy_ROS2:** Fase de exploración inicial en ROS2 Humble.
 
-- **Firmware uROS** en ESP32-S3
-- Control de servos DS3240 mediante PCA9685
-- Lectura de sensores IMU MPU-9250 y sensor de corriente ACS712
-- Comunicación completa ROS ↔ micro-ROS vía UDP
-
-El objetivo del proyecto es lograr un control estable, escalable y probado en hardware real.  
-Esta versión 1.0 constituye la **base funcional del sistema**.
-
----
+## 📊 Resultados Técnicos
+* **Algoritmo:** Trayectorias Bézier G5 (Continuidad C2).
+* **Hardware:** Control distribuido con estabilidad temporal superior a la arquitectura ROS2 inicial.
+* **Error de Posicionamiento:** 11.4 cm promedio en pruebas de desplazamiento lineal.
