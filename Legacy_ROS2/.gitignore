@@ -1,0 +1,69 @@
+# ================================
+# 📁 System / IDE files
+# ================================
+.DS_Store
+.vscode/
+.idea/
+*.swp
+*.swo
+*.bak
+*.tmp
+
+# ================================
+# ⚙️ ROS 2 workspace build folders
+# ================================
+build/
+install/
+log/
+
+# Colcon / CMake artifacts
+.colcon/
+CMakeFiles/
+CMakeCache.txt
+*.cmake
+*.launch.pyc
+
+# Python bytecode
+__pycache__/
+*.pyc
+
+# ================================
+# 🤖 Firmware / microcontroller
+# ================================
+firmware/.pio/
+firmware/.vscode/
+firmware/build/
+firmware/libraries/
+firmware/.depend
+firmware/.gcc-flags.json
+
+# ================================
+# 🔒 Config & secrets
+# ================================
+firmware/config.h
+*.env
+.env
+*.key
+*.pem
+*.crt
+*.cfg
+
+# ================================
+# 📦 Large data or generated logs
+# ================================
+data/
+*.log
+*.bag
+*.bag.active
+*.bag.tmp
+*.bag.db3
+
+# ================================
+# 🧠 Jetson / Linux specific
+# ================================
+*.bash_history
+*.zsh_history
+*.deb
+*.run
+*.out
+*.bin
